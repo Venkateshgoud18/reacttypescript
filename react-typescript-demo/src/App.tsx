@@ -7,6 +7,9 @@ import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
+import { Button } from './components/Button';
+import { Input } from './components/Input';
+import { Container } from './components/Container';
 function App() {
   const personName={
     first:'Bruce',
@@ -29,6 +32,11 @@ function App() {
         <Heading>Oscar goes to Leonardo DiCaprio!</Heading>
       </Oscar>
       <Greet name="venky" messageCount={12} />
+      <Button handleClick={(event,id) => console.log('Button clicked!',event,id)} />
+      <Input value='' handleChange={(event) => console.log(event)}/>
+      <Container>
+        <p>This is inside the container component</p>
+      </Container>
 
 
     </div>
