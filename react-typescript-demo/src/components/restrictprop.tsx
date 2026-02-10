@@ -16,9 +16,9 @@ export const RestrictProps=(props:RandomProps)=>{
         message='The number is zero'
     }
     return (
-        <div>
-            <h2>{props.value}</h2>
-            <p>{message}</p>
-        </div>
+       <div>
+        <h2>{message}</h2> 
+        <h1>{props.value}</h1>
+       </div>
     )
 }
